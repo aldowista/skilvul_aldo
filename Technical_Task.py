@@ -1,4 +1,5 @@
 import os
+import time
 
 #List all_items
 all_items = {
@@ -144,6 +145,7 @@ def total(menu, list_item, quantity): ##Menghitung total harga
         print("\nDetail :")
         for i in range (len(list_item)):
             print(str(quantity[i]) + " " + str(list_item[i]) + " -> Rp. " + "{:,}".format(all_items[list_item[i]]*quantity[i]))
+    time.sleep(5)
     exit()
 
 menu_awal()
